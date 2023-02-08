@@ -1,9 +1,7 @@
 // function for deciding or labelling the items
 function getComputerChoice() {
-
   // pick one random number from 1 to 3
   let randomNumber = Math.floor(Math.random() * 3);
-
   // pick wether rock, paper, scissors based on the random number before
   switch(randomNumber) {
     case 0:
@@ -18,7 +16,6 @@ function getComputerChoice() {
     default:
       choosed = "Computer doesn't choose anything";
   }
-
   // return the value
   return choosed;
 }
@@ -29,7 +26,6 @@ function playRound (playerSelection, computerSelection) {
   // local variable declaration
   let playerWin = 0;
   let computerWin = 0;
-
   // if else for deciding wether who's got the point
   if (playerSelection == "Rock" && computerSelection == "Rock") {
     playerWin = playerWin + 0;
@@ -53,7 +49,6 @@ function playRound (playerSelection, computerSelection) {
     playerWin = playerWin + 0;
     computerWin = computerWin + 0;
   }
-
   // return the playerWin and computerWin to one variable so we can use later
   return total = [playerWin, computerWin];
 }
@@ -64,7 +59,6 @@ function game(playerSelection, computerSelection) {
   // local declaration variable
   let playerWinTotal = 0;
   let computerWinTotal = 0;
-
   // looping 5 times
   for (i = 1; i <= 5; i++) {
     // use input from user with prompt function
@@ -88,7 +82,6 @@ function game(playerSelection, computerSelection) {
     // just a line, for.. you know, better readable output.
     console.log("-------------------------------------------------------")
   }
-
   /* if looping reach 5, and the total variable added, we can start 
   deciding who's the winner and the loser. */
   if (playerWinTotal > computerWinTotal) {
@@ -109,8 +102,7 @@ function game(playerSelection, computerSelection) {
 
 // Global Declaration
 let computerSelection;
-let playerSelection;
-
+let playerSelection;g
 
 // call the function to run
 game(playerSelection, computerSelection);
