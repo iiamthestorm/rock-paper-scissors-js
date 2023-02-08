@@ -102,7 +102,7 @@ function game(playerSelection, computerSelection) {
 
 // Global Declaration
 let computerSelection;
-let playerSelection;g
+let playerSelection;
 
 // call the function to run
 game(playerSelection, computerSelection);
